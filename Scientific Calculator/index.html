@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scientific Calculator.com</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="calc.js"></script>
+    </head>
+    <body>
+        <section>
+            <div class="box1">
+                <div><input type="button" value="SCIENTIFIC CALCULATOR" id="label"></div>
+                <div class="box2">
+                    <div><input type="text" id="input" placeholder="0"></div>
+                    <br><br>
+                    <div><input type="text" id="result" placeholder="0"></div>
+                </div>
+                <table cellspacing="0.5">
+                    <tr>
+                        <td><input type="button" id="btn1" value="(" onclick="dis('(')" /></td>
+                        <td><input type="button" id="btn1" value=")" onclick="dis(')')" /></td>
+                        <td><input type="button" id="btn1" value="%" onclick="dis('%')" /></td>
+                        <td><input type="button" id="btn1" value="!" onclick="dis('!')" /></td>
+                        <td><input type="button" id="btn" value="Pow" onclick="dis('**(')" /></td>
+                        <td><input type="button" id="ans" value="=" onclick="solve()" /></td>
+                        <td><input type="button" id="clear" value="C" onclick="bs()" /></td>
+                        <td><input type="button" id="allclear" value="AC" onclick="clr()" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="dis('1')" /></td>
+                        <td><input type="button" value="2" onclick="dis('2')" /></td>
+                        <td><input type="button" value="3" onclick="dis('3')" /></td>
+                        <td><input type="button" id="btn1" value="/" onclick="dis('/')" /></td>
+                        <td><input type="button" id="btn" value="Sqr" onclick="dis('**(2)')" /></td>
+                        <td><input type="button" id="btn" value="sin" onclick="dis('Math.sin(')" /></td>
+                        <td><input type="button" id="btn" value="sin-1" onclick="dis('Math.asin(')" /></td>
+                        <td><input type="button" id="btn" value="ln2" onclick="dis('Math.LN2')" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="dis('4')" /></td>
+                        <td><input type="button" value="5" onclick="dis('5')" /></td>
+                        <td><input type="button" value="6" onclick="dis('6')" /></td>
+                        <td><input type="button" id="btn1" value="*" onclick="dis('*')" /></td>
+                        <td><input type="button" id="btn" value="Cube" onclick="dis('**(3)')" /></td>
+                        <td><input type="button" id="btn" value="cos" onclick="dis('Math.cos(')" /></td>
+                        <td><input type="button" id="btn" value="cos-1" onclick="dis('Math.acos(')" /></td>
+                        <td><input type="button" id="btn" value="ln10" onclick="dis('Math.LN10')" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" onclick="dis('7')" /></td>
+                        <td><input type="button" value="8" onclick="dis('8')" /></td>
+                        <td><input type="button" value="9" onclick="dis('9')" /></td>
+                        <td><input type="button" id="btn1" value="-" onclick="dis('-')" /></td>
+                        <td><input type="button" id="btn" value="Sqrt" onclick="dis('Math.sqrt(')" /></td>
+                        <td><input type="button" id="btn" value="tan" onclick="dis('Math.tan(')" /></td>
+                        <td><input type="button" id="btn" value="tan-1" onclick="dis('Math.atan(')" /></td>
+                        <td><input type="button" id="btn" value="log" onclick="dis('Math.log(')" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="btn2" value="." onclick="dis('.')" /></td>
+                        <td><input type="button" value="0" onclick="dis('0')" /></td>
+                        <td><input type="button" id="btn2" value="," onclick="dis(',')" /></td>
+                        <td><input type="button" id="btn1" value="+" onclick="dis('+')" /></td>
+                        <td><input type="button" id="btn" value="cbrt" onclick="dis('Math.cbrt(')" /></td>
+                        <td><input type="button" id="btn" value="1/x" onclick="dis('1/')" /></td>
+                        <td><input type="button" id="btn" value="Pi" onclick="dis('(Math.PI)')" /></td>
+                        <td><input type="button" id="btn" value="e" onclick="dis('(Math.E)')" /></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </body>
+</html>
